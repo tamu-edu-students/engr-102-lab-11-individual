@@ -8,7 +8,7 @@ There are three deliverables for this individual assignment. Please submit the f
 3. [Weather Data](#weather-data)
 
 ## Barcode Checker
-A barcode is valid if the digits satisfy a certain constraint. For example, take the 13-digit barcode `1877455846014` and split the first 12 digits into two groups: `(1,7,4,5,4,0)` and `(8,7,5,8,6,1)`. The first group contains every other digit starting with the first, and the second group contains every other digit starting with the second. Take the sum of the digits in the second group and multiply it by 3. Add to that the sum of the digits in the first group. Subtract the last digit of that number from 10, and it should match the last digit of the barcode.
+A barcode is valid if the digits satisfy a certain constraint. For example, take the 13-digit barcode `1877455846014` and split the first 12 digits into two groups: `(1,7,4,5,4,0)` and `(8,7,5,8,6,1)`. The first group contains every other digit starting with the first, and the second group contains every other digit starting with the second. Take the sum of the digits in the second group and multiply it by 3. Add to that the sum of the digits in the first group. Subtract the last digit of that number from 10, and it should match the last digit of the barcode. Note: if the last digit is zero, the barcode should end in zero.
 
 Example math using barcode `1877455846014`:</br>
 Sum of first group = 1 + 7 + 4 + 5 + 4 + 0 = **21**</br>
@@ -63,7 +63,43 @@ Month,Total Accrued Interest,Loan Balance
 
 
 ## Weather Data
-more stuff
+The CSV file posted with this assignment named `WeatherDataCLL.csv` contains weather data from Easterwood Airport (in College Station) for 10 years. The data was taken from the National Oceanic and Atmospheric Administration’s National Centers for Environmental Information (NOAA’s NCEI, https://www.ncdc.noaa.gov/). You can view the data by opening the file in any text or spreadsheet editor (e.g. Notepad++, Excel) or in your IDE. The first line of the file contains the column headers explaining what each column is. **Note:** Some days are missing data.
+
+Download the file and write a program named `weather_data.py` that does the following:
+1.	Open the CSV file for reading
+2.	Read the CSV file and compute
+    <ul>
+    <li>the maximum temperature seen over the 10-year period</li>
+    <li>the minimum temperature seen over the 10-year period</li></ul>
+4.	Output the results to the console using the format below
+5.	Perform the following seven data analysis exercises and output the results to the console. Take as input from the user a month and year, then for that month,
+    <ul><li>Calculate the mean of the average pressure (use 2 decimal places)</li>
+    <li>Calculate the mean of the average temperature (use 1 decimal place)</li>
+    <li>Calculate the mean of the average wet bulb temperature (use 1 decimal place)</li>
+    <li>Calculate the mean of the average dew point (use 1 decimal place)</li>
+    <li>Calculate the mean of the average relative humidity (use 1 decimal place)</li>
+    <li>Calculate the mean of the average daily wind speed (use 2 decimal places)</li>
+    <li>Calculate the percentage of days with non-zero precipitation (use 1 decimal place)</li></ul>
+
+Example Output (using inputs `July`, `2024`, but with made-up numbers):
+```
+10-year maximum temperature: 102 F
+10-year minimum temperature: 7 F
+
+Please enter a month: July
+Please enter a year: 2024
+
+For July 2024:
+Mean average daily pressure: 29.73 in Hg
+Mean average daily temperature: 92.5 F
+Mean average daily wet bulb temperature: 81.2 F
+Mean average daily dew point: 78.1 F
+Mean average daily relative humidity: 58.6%
+Mean average daily wind speed: 7.34 mph
+Percentage of days with precipitation: 2.1%
+```
+
+
 
 ## Frequently Asked Questions
 1. **I downloaded the `barcodes.txt` / `WeatherDataCLL.csv` file and tried to run my code, but I get the error "No such file or directory". What does that mean?** Please see [the FAQ for Lab: Topic 11 (team)](https://github.com/tamu-edu-students/engr-102-lab-11-team?tab=readme-ov-file#frequently-asked-questions) for help on this.
