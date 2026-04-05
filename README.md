@@ -18,7 +18,7 @@ Add first group = 105 + **21** = 12**6**</br>
 Use the last digit and subtract from ten = 10 - **6** = 4</br>
 4 is the last digit in the barcode, so it is valid
 
-Write a program named `barcode_checker.py` that takes as input a filename that contains many 13-digit barcodes. Have your program read the file, determine whether each barcode is valid, and write the valid barcodes to a new file named `valid_barcodes.txt`. Have your program output the total number of valid barcodes found using the example output below. You do not have to submit your `valid_barcodes.txt` file to Gradescope.
+Write a program named `barcode_checker.py` that takes as input a filename (like [barcodes.txt](barcodes.txt)) that contains many 13-digit barcodes. Have your program read the file, determine whether each barcode is valid, and write the valid barcodes to a new file named `valid_barcodes.txt`. Have your program output the total number of valid barcodes found using the example output below. You do not have to submit your `valid_barcodes.txt` file to Gradescope.
 
 Example output using `barcodes.txt`:
 ```
@@ -63,7 +63,7 @@ Month,Total Accrued Interest,Loan Balance
 
 
 ## Weather Data
-The CSV file posted with this assignment named `WeatherDataCLL.csv` contains weather data from Easterwood Airport (in College Station) for 10 years. The data was taken from the National Oceanic and Atmospheric Administration’s National Centers for Environmental Information (NOAA’s NCEI, https://www.ncdc.noaa.gov/). You can view the data by opening the file in any text or spreadsheet editor (e.g. Notepad++, Excel) or in your IDE. The first line of the file contains the column headers explaining what each column is. **Note:** Some days are missing data.
+The [CSV file posted with this assignment](WeatherDataCLL.csv) named `WeatherDataCLL.csv` contains weather data from Easterwood Airport (in College Station) for 10 years. The data was taken from the National Oceanic and Atmospheric Administration’s National Centers for Environmental Information (NOAA’s NCEI, https://www.ncdc.noaa.gov/). You can view the data by opening the file in any text or spreadsheet editor (e.g. Notepad++, Excel) or in your IDE. The first line of the file contains the column headers explaining what each column is. **Note:** Some days are missing data.
 
 Download the file and write a program named `weather_data.py` that does the following:
 1.	Open the CSV file for reading
