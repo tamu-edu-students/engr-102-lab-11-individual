@@ -108,7 +108,7 @@ Percentage of days with precipitation: 2.1%
 
 3. **Do I need to submit my `valid_barcodes.txt` and `out.csv` files?** Nope! The autograding code on Gradescope will run your submitted python files, create the output files that your code (should) generate, then check them. If you submit them, they will just be ignored.
 
-4. **Activity 1 (barcode checker) do you have a better way to explain the barcode math?** Yes! Here is a nice poster with color coded numbers to make it easier to understand.
+4. **Activity 1 (barcode checker) do you have a better way to explain the barcode math?** Yes! [Here is a nice poster](barcode_checksum.pdf) with color coded numbers to make it easier to understand.
 
 5. **Activity 2 (loan calculator) my numbers are off! Help!** Try solving the problem by hand. Okay, not the whole problem, just two or three months. Write down ALL of your steps, don't leave out obvious or easy things that you can do in your head. Make sure your steps are in order (remember sequence of steps?). Now, where do your calculations start to repeat? Does your code perform those same calculations in the same order? Also, total accrued interest is the running total of each month's accrued interest up to that point. And the ending balance of one month is the beginning balance of the next month.
 
