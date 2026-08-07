@@ -18,7 +18,7 @@ Add first group = 105 + **21** = 12**6**</br>
 Use the last digit and subtract from ten = 10 - **6** = 4</br>
 4 is the last digit in the barcode, so it is valid
 
-Write a program named `barcode_checker.py` that takes as input a filename (like [barcodes.txt](barcodes.txt)) that contains many 13-digit barcodes. Have your program read the file, determine whether each barcode is valid, and write the valid barcodes to a new file named `valid_barcodes.txt`. Have your program output the total number of valid barcodes found using the example output below. You do not have to submit your `valid_barcodes.txt` file to Gradescope.
+Write a program named `barcode_checker.py` that takes as input a filename (like [barcodes.txt](barcodes.txt)) that contains many 13-digit barcodes. Have your program read the file, determine whether each barcode is valid, and write the valid barcodes to a new file named `valid_barcodes.txt`. Have your program output the total number of valid barcodes found using the example output below. Do not submit your `valid_barcodes.txt` file to Gradescope, the autograder will run your code to generate the file.
 
 Example output using `barcodes.txt`:
 ```
@@ -32,7 +32,7 @@ This activity provides practice with CSV (Comma Separated Value) files. CSV file
 
 Write a program named `loan_calculator.py` that will write to a file a list of amortized values for a loan. Have your program take as input from the user the output filename, the principal amount of the loan ($$P$$), the number of months over which the loan will be repaid ($$N$$), and the annual interest rate ($$i$$). Note that $$i$$ should be a decimal number, not a percentage: 0.025 instead of 2.5%. Calculate the monthly payment ($$M$$) as:
 
-$$M=\frac{Pi/12}{1-(\frac{1}{1+i/12})^N}$$
+$$M=\frac{Pi/12}{1-\left(\frac{1}{1+i/12}\right)^N}$$
 
 For the example below, $$M$$=$1774.74. Create an output file using the filename obtained from the user, and in the first line write the header as shown in the example below. After the header, write to the file the initial values for the month number, the total amount of interest accrued so far using 2 decimal places, and the amount remaining on the loan using 2 decimal places. For each month starting with month 1 and ending when the balance is less than $0.01, perform the following calculations:
 
@@ -106,7 +106,7 @@ Percentage of days with precipitation: 2.1%
 
 2. **I can't get my code to pass the "file created correctly" test case. Should I be worried?** YES. This activity is completely autograded. If you want the points, you need to create the file correctly.
 
-3. **Do I need to submit my `valid_barcodes.txt` and `out.csv` files?** Nope! The autograding code on Gradescope will run your submitted python files, create the output files that your code (should) generate, then check them. If you submit them, they will just be ignored.
+3. **Do I need to submit my `valid_barcodes.txt` and `out.csv` files?** Nope! The autograding code on Gradescope will run your submitted python files, create the output files that your code (should) generate, then check them. If you submit them, the autograder will not run.
 
 4. **Activity 1 (barcode checker) do you have a better way to explain the barcode math?** Yes! [Here is a nice poster](barcode_checksum.pdf) with color coded numbers to make it easier to understand.
 
@@ -118,4 +118,4 @@ Percentage of days with precipitation: 2.1%
 
 Have a question you don't see here? Email your instructor!
 
-Revised Fall 2025 SNR
+Revised Summer 2026 SNR
